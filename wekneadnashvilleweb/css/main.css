@@ -1,0 +1,8 @@
+﻿body {
+    background: #000000 url('img/bg_blue_hands.jpg') no-repeat fixed center;
+}
+#main {
+    width: 75%;
+    height: 75%;
+    margin: auto;
+}
