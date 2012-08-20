@@ -1,8 +1,14 @@
 ﻿body {
-    background: #000000 url('img/bg_blue_hands.jpg') no-repeat fixed center;
+    background: #000000 url('../img/bg_blue_hands.jpg') no-repeat fixed center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 #main {
-    width: 75%;
-    height: 75%;
-    margin: auto;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    position: fixed;
+    background: transparent;
+    border: 1px solid #FFFFFF;
 }
