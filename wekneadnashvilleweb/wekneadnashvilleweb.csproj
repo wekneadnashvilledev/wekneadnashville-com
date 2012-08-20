@@ -58,15 +58,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\main.css" />
-    <Content Include="img\About Image.jpg" />
     <Content Include="img\Att_building_nashville.jpg" />
-    <Content Include="img\Background Image.jpg" />
+    <Content Include="img\bg_blue_hands.jpg" />
     <Content Include="img\fountain.jpg" />
-    <Content Include="img\Gallery Image.jpg" />
-    <Content Include="img\imagesCADTGXND.jpg" />
-    <Content Include="img\maninspafuture.jpg" />
-    <Content Include="img\massage-09.jpg" />
-    <Content Include="img\MilesB_DSC5740.jpg" />
+    <Content Include="img\massage_stock_man.jpg" />
+    <Content Include="img\massage_stock_woman.jpg" />
+    <Content Include="img\miles_kneeling.jpg" />
+    <Content Include="img\miles_sitting.jpg" />
+    <Content Include="img\miles_standing.jpg" />
+    <Content Include="img\nashville_street.jpg" />
     <Content Include="img\We Knead 2.jpg" />
     <Content Include="img\WeKnead.jpg" />
     <Content Include="img\WeKnead1.jpg" />
