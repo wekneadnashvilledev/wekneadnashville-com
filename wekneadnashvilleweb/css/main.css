@@ -1,14 +1,51 @@
 ﻿body {
     background: #000000 url('../img/bg_blue_hands.jpg') no-repeat fixed center;
     background-size: cover;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #main {
-    width: 80%;
+    width: 70%;
     height: 80%;
-    margin: 10%;
+    margin: 10% 15%;
     position: fixed;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #0000AA;
+    text-align: center;
+}
+.textpanel {
+    background: rgba(204, 204, 255, .6);
+}
+#index_top, #index_bottom {
+    height: 15%;
+}
+#index_middle {
+    height: 70%;
+}
+#index_middle > div {
+    float: left;
+    height: 100%;
+    width: 34%;
+}
+#index_middle > div.side {
+    width: 33%;
+}
+h1, h2 {
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 18px;
+    font-style: italic;
+}
+.verticalAlign {
+    vertical-align: middle;
+    display: inline;
+}
+a.panel {
+    display: block;
+}
+a.panel img {
+    width: 100px;
 }
