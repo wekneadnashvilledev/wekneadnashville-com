@@ -1,7 +1,10 @@
-﻿body {
+﻿/* global classes */
+
+/* site-wide element styles */
+body {
     background: #000000 url('../img/bg_blue_hands.jpg') no-repeat fixed center;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Helvetica, sans-serif;
 }
 #main {
     width: 70%;
@@ -9,14 +12,34 @@
     margin: 10% 15%;
     position: fixed;
     background: transparent;
-    border: 1px solid #0000AA;
     text-align: center;
 }
-.textpanel {
-    background: rgba(204, 204, 255, .6);
+h1, h2 {
+    text-transform: uppercase;
 }
+h1 {
+    font-size: 38px;
+    padding-top: 5px;
+}
+h2 {
+    font-size: 20px;
+    font-style: italic;
+    padding: 12px 0px;
+}
+
+/* Index page */
 #index_top, #index_bottom {
-    height: 15%;
+    background: rgba(255, 255, 255, .4);
+    border: 1px solid rgb(6, 70, 116);
+}
+#index_top {
+    height: 18%;
+    border-bottom: 0;
+}
+#index_bottom {
+    height: 12%;
+    margin-top: 2px;
+    border-top: 0;
 }
 #index_middle {
     height: 70%;
@@ -26,25 +49,40 @@
     height: 100%;
     width: 34%;
 }
-#index_middle > div.side {
+#index_middle > div.left, #index_middle > div.right {
     width: 33%;
-}
-h1, h2 {
-    text-transform: uppercase;
-}
-h1 {
-    font-size: 32px;
-}
-h2 {
-    font-size: 18px;
-    font-style: italic;
-}
-.verticalAlign {
-    vertical-align: middle;
-    display: inline;
 }
 a.panel {
     display: block;
+    height: 100%;
+    background: rgba(255, 255, 255, .2);
+    border: 1px solid rgb(6, 70, 116);
+    color: rgb(250, 250, 250);
+}
+a.panel:hover {
+    background: rgba(255, 0, 0, .2);
+}
+a.panel div {
+    padding: 8px 0px;
+}
+div.middle a.panel {
+    border-left: 0;
+    border-right: 0;
+    padding-bottom: 1px;
+}
+div.left a.panel {
+    height: 60%;
+}
+div.left a.panel:first-child {
+    height: 40%;
+    border-bottom: 0;
+}
+div.right a.panel {
+    height: 40%;
+}
+div.right a.panel:first-child {
+    height: 60%;
+    border-bottom: 0;
 }
 a.panel img {
     width: 100px;
