@@ -1,4 +1,11 @@
 ﻿@{
+    var RequestApplicationPath = Request.ApplicationPath;
+    var RequestAppRelativeCurrentExecutionFilePath = Request.AppRelativeCurrentExecutionFilePath;
+    var RequestCurrentExecutionFilePath = Request.CurrentExecutionFilePath;
+    var RequestFilePath = Request.FilePath;
+    var RequestPhysicalApplicationPath = Request.PhysicalApplicationPath;
+    var RequestPhysicalPath = Request.PhysicalPath;
+    
     var pageName = Path.GetFileNameWithoutExtension(Request.PhysicalPath);
     var closeLinkClass = (@pageName == "index") ? "remove" : "";
 }
@@ -9,6 +16,15 @@
         <link rel="stylesheet" type="text/css" href="/css/main.css" />
     </head>
     <body class="@pageName">
+
+        <!--
+            Request.ApplicationPath = @RequestApplicationPath
+            Request.AppRelativeCurrentExecutionFilePath = @RequestAppRelativeCurrentExecutionFilePath
+            Request.CurrentExecutionFilePath = @RequestCurrentExecutionFilePath
+            Request.FilePath = @RequestFilePath
+            Request.PhysicalApplicationPath = @RequestPhysicalApplicationPath
+            Request.PhysicalPath = @RequestPhysicalPath
+        -->
 
         <div class="content">
 
