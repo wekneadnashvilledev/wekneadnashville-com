@@ -91,6 +91,18 @@
   <ItemGroup>
     <Content Include="Shared\Layout.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="info.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="services.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="therapists.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

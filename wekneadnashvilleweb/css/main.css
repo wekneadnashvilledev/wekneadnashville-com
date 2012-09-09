@@ -1,89 +1,117 @@
-﻿/* global classes */
-
-/* site-wide element styles */
-body {
-    background: #000000 url('../img/bg_blue_hands.jpg') no-repeat fixed center;
-    background-size: cover;
-    font-family: Verdana, Helvetica, sans-serif;
+﻿@font-face {
+    font-family: PenultimateLight;
+    src: url('../img/penultimatelightregular.ttf');
 }
-#main {
-    width: 70%;
-    height: 80%;
-    margin: 10% 15%;
-    position: fixed;
-    background: transparent;
-    text-align: center;
+@font-face {
+    font-family: PenultimateLight;
+    font-style: italic;
+    src: url('../img/penultimatelightitalregular.ttf');
 }
-h1, h2 {
-    text-transform: uppercase;
+h1, h2, p, span.left, span.right {
+    font-family: PenultimateLight, Verdana, Helvetica, sans-serif;
+    line-height: 125%;
 }
 h1 {
-    font-size: 38px;
-    padding-top: 5px;
+    font-size: 2em;
+    margin: 0.60em 0em;
 }
 h2 {
-    font-size: 20px;
+    font-size: 1.5em;
+    margin: 0.60em 0em;
     font-style: italic;
-    padding: 12px 0px;
 }
-
-/* Index page */
-#index_top, #index_bottom {
-    background: rgba(255, 255, 255, .4);
-    border: 1px solid rgb(6, 70, 116);
+p {
+    font-size: 1.5em;
+    margin: 0.83em 0em;
 }
-#index_top {
-    height: 18%;
-    border-bottom: 0;
-}
-#index_bottom {
-    height: 12%;
-    margin-top: 2px;
-    border-top: 0;
-}
-#index_middle {
-    height: 70%;
-}
-#index_middle > div {
-    float: left;
-    height: 100%;
-    width: 34%;
-}
-#index_middle > div.left, #index_middle > div.right {
-    width: 33%;
-}
-a.panel {
+.clearfix {
     display: block;
-    height: 100%;
-    background: rgba(255, 255, 255, .2);
-    border: 1px solid rgb(6, 70, 116);
-    color: rgb(250, 250, 250);
 }
-a.panel:hover {
-    background: rgba(255, 0, 0, .2);
+.clearfix:after {
+    content: ".";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    line-height: 0;
 }
-a.panel div {
-    padding: 8px 0px;
+body {
+    background-color: rgba(72, 0, 255, .8);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: Verdana, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: -4px 3px 2px rgb(0, 0, 0);
 }
-div.middle a.panel {
-    border-left: 0;
-    border-right: 0;
-    padding-bottom: 1px;
+body.index {
+    background-image: url("../img/bg_blue_hands.jpg");
 }
-div.left a.panel {
-    height: 60%;
+body.about {
+    background-image: url("../img/bg_about.jpg");
 }
-div.left a.panel:first-child {
-    height: 40%;
-    border-bottom: 0;
+body.info {
+    background-image: url("../img/bg_info.jpg");
 }
-div.right a.panel {
-    height: 40%;
+body.therapists {
+    background-image: url("../img/bg_therapists.jpg");
 }
-div.right a.panel:first-child {
-    height: 60%;
-    border-bottom: 0;
+body.services {
+    background-image: url("../img/bg_info.jpg");
 }
-a.panel img {
-    width: 100px;
+div.content {
+    width: 70%;
+    min-height: 600px;
+    margin: 80px auto 0px auto;
+    padding: 0px 25px;
+    text-align: center;
+    background: rgba(250, 250, 250, .3);
+    border: 4px outset rgb(80, 80, 80);
+    border-radius: 2px;
+}
+div.close {
+    text-align: right;
+    margin: 10px 0px;
+    text-shadow: none;
+}
+div.close span.closeX {
+    font-size: 24px;
+    vertical-align: -2px;
+}
+div.close a {
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+div.close a:hover {
+    cursor: pointer;
+    color: rgb(220, 220, 220);
+}
+.remove {
+    display: none;
+}
+div.serviceGrid {
+    text-align: left;
+}
+span.left {
+    padding-left: 30%;
+}
+span.right {
+    float: right;
+    padding-right: 30%;
+}
+body.therapists div.content p {
+    text-align: justify;
+}
+body.therapists div.content p img {
+    float: right;
+    width: 200px;
+    margin: 0px 0px 20px 20px;
+}
+div.thirds {
+    float: left;
+    width: 33%;
+    min-height: 420px;
+    border: 1px solid red;
 }

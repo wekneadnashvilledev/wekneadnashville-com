@@ -1,13 +1,27 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var pageName = Path.GetFileNameWithoutExtension(Server.MapPath(Request.Path));
+    var closeLinkClass = (@pageName == "index") ? "remove" : "";
+}
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/css/meyer_reset.css" />
         <link rel="stylesheet" type="text/css" href="/css/main.css" />
     </head>
-    <body>
+    <body class="@pageName">
 
-        <div id="main">
-        @RenderBody()
+        <div class="content">
+
+            <div class="close">
+                <a href="/index" class="@closeLinkClass">
+                    CLOSE
+                    <span class="closeX">
+                        &#215;
+                    </span>
+                </a>
+            </div>
+
+            @RenderBody()
         </div>
 
     </body>
