@@ -60,7 +60,10 @@
     <Content Include="css\main.css" />
     <Content Include="css\meyer_reset.css" />
     <Content Include="img\Att_building_nashville.jpg" />
+    <Content Include="img\bg_about.jpg" />
     <Content Include="img\bg_blue_hands.jpg" />
+    <Content Include="img\bg_info.jpg" />
+    <Content Include="img\bg_therapists.jpg" />
     <Content Include="img\fountain.jpg" />
     <Content Include="img\massage_collage_small.jpg" />
     <Content Include="img\massage_stock_man.jpg" />
@@ -70,7 +73,9 @@
     <Content Include="img\miles_sitting.jpg" />
     <Content Include="img\miles_standing.jpg" />
     <Content Include="img\nashville_street.jpg" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,6 +107,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="therapists.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\penultimatelightitalregular.ttf" />
+    <Content Include="img\penultimatelightregular.ttf" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
