@@ -45,21 +45,6 @@ body {
     color: rgb(255, 255, 255);
     text-shadow: -4px 3px 2px rgb(0, 0, 0);
 }
-body.index {
-    background-image: url("../img/bg_blue_hands.jpg");
-}
-body.about {
-    background-image: url("../img/bg_about.jpg");
-}
-body.info {
-    background-image: url("../img/bg_info.jpg");
-}
-body.therapists {
-    background-image: url("../img/bg_therapists.jpg");
-}
-body.services {
-    background-image: url("../img/bg_info.jpg");
-}
 div.content {
     width: 70%;
     min-height: 600px;
@@ -88,9 +73,6 @@ div.close a:hover {
     cursor: pointer;
     color: rgb(220, 220, 220);
 }
-.remove {
-    display: none;
-}
 div.serviceGrid {
     text-align: left;
 }
@@ -100,14 +82,6 @@ span.left {
 span.right {
     float: right;
     padding-right: 30%;
-}
-body.therapists div.content p {
-    text-align: justify;
-}
-body.therapists div.content p img {
-    float: right;
-    width: 200px;
-    margin: 0px 0px 20px 20px;
 }
 div.thirds {
     float: left;

@@ -1,35 +1,16 @@
-﻿@{
-    var RequestApplicationPath = Request.ApplicationPath;
-    var RequestAppRelativeCurrentExecutionFilePath = Request.AppRelativeCurrentExecutionFilePath;
-    var RequestCurrentExecutionFilePath = Request.CurrentExecutionFilePath;
-    var RequestFilePath = Request.FilePath;
-    var RequestPhysicalApplicationPath = Request.PhysicalApplicationPath;
-    var RequestPhysicalPath = Request.PhysicalPath;
-    
-    var pageName = Path.GetFileNameWithoutExtension(Request.PhysicalPath);
-    var closeLinkClass = (@pageName == "index") ? "remove" : "";
-}
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/css/meyer_reset.css" />
         <link rel="stylesheet" type="text/css" href="/css/main.css" />
+        @RenderSection("CustomStyles")
     </head>
-    <body class="@pageName">
-
-        <!--
-            Request.ApplicationPath = @RequestApplicationPath
-            Request.AppRelativeCurrentExecutionFilePath = @RequestAppRelativeCurrentExecutionFilePath
-            Request.CurrentExecutionFilePath = @RequestCurrentExecutionFilePath
-            Request.FilePath = @RequestFilePath
-            Request.PhysicalApplicationPath = @RequestPhysicalApplicationPath
-            Request.PhysicalPath = @RequestPhysicalPath
-        -->
+    <body>
 
         <div class="content">
 
             <div class="close">
-                <a href="/index" class="@closeLinkClass">
+                <a id="mainCloseLink" href="/index">
                     CLOSE
                     <span class="closeX">
                         &#215;
