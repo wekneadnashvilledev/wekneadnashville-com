@@ -1,5 +1,5 @@
 ﻿@{
-    var pageName = Path.GetFileNameWithoutExtension(Server.MapPath(Request.Path));
+    var pageName = Path.GetFileNameWithoutExtension(Request.PhysicalPath);
     var closeLinkClass = (@pageName == "index") ? "remove" : "";
 }
 <!DOCTYPE html>
