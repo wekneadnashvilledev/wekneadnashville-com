@@ -8,13 +8,6 @@
         div.close {
             display: none;
         }
-        h2 {
-            border-bottom: 2px solid rgb(80, 80, 80);
-        }
-        h2.footer {
-            border-bottom: none;
-            border-top: 2px solid rgb(80, 80, 80);
-        }
     </style>
 }
 
@@ -25,39 +18,27 @@
     Mobile massage and more!
 </h2>
 
-<div class="left thirds">
-    <a href="~/about.cshtml" style="display: inline-block; width: 100%;">
-        <h3>
-            About
-        </h3>
+<div class="thirds">
+    <a href="~/about.cshtml" style="height: 40%; background: url('@Href("~/img/fountain.jpg")') no-repeat rgb(72, 0, 255) center top; background-size: 100% auto;">
+        <span class="anchorWrap">About</span>
     </a>
-
-    <a href="~/therapists.cshtml" style="display: inline-block; width: 100%;">
-        <h3>
-            Therapists
-        </h3>
+    <a href="~/therapists.cshtml" style="height: 60%; background: url('@Href("~/img/miles_sitting.jpg")') no-repeat rgb(72, 0, 255) center 10%; background-size: 100% auto;">
+        <span class="anchorWrap">Therapists</span>
     </a>
 </div>
 
-<div class="middle thirds">
-    <a href="~/services.cshtml" style="display: inline-block; width: 100%;">
-        <h3>
-            Services
-        </h3>
+<div class="thirds">
+    <a href="~/services.cshtml" style="height: 100%; background: url('@Href("~/img/Att_building_nashville.jpg")') no-repeat rgb(72, 0, 255) center center; background-size: 100% auto;">
+        <span class="anchorWrap">Services</span>
     </a>
 </div>
 
-<div class="right thirds">
-    <a href="~/info.cshtml" style="display: inline-block; width: 100%;">
-        <h3>
-            Info
-        </h3>
+<div class="thirds">
+    <a href="~/info.cshtml" style="height: 60%; background: url('@Href("~/img/nashville_street.jpg")') no-repeat rgb(72, 0, 255) center center; background-size: auto 100%;">
+        <span class="anchorWrap">Info</span>
     </a>
-
-    <a href="~/gallery.cshtml" style="display: inline-block; width: 100%;">
-        <h3>
-            Gallery
-        </h3>
+    <a href="~/videodemo.cshtml" style="height: 40%; background: url('@Href("~/img/massage_stock_man.jpg")') no-repeat rgb(72, 0, 255) center center; background-size: 100% auto;">
+        <span class="anchorWrap">Video Demo</span>
     </a>
 </div>
 
