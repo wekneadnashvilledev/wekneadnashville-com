@@ -112,6 +112,9 @@
     <Content Include="img\penultimatelightitalregular.ttf" />
     <Content Include="img\penultimatelightregular.ttf" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="videodemo.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

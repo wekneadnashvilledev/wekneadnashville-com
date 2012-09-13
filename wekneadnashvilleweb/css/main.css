@@ -83,11 +83,11 @@ div.serviceGrid {
     text-align: left;
 }
 span.left {
-    padding-left: 30%;
+    padding-left: 15%;
 }
 span.right {
     float: right;
-    padding-right: 30%;
+    padding-right: 20%;
 }
 div.thirds {
     float: left;
@@ -114,6 +114,10 @@ div.thirds a:hover {
     content: ".";
     clear: both;
 }
-span.anchorWrap {
-    margin-top: 10px;
+.anchorWrap {
+    margin: 5px 0px 0px 0px;
+}
+.serviceGrid {
+    font-size: 1.4em;
+    margin: 30px 0px 0px 0px;
 }
