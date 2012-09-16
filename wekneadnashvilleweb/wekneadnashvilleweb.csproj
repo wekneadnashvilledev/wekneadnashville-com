@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="css\main.css" />
     <Content Include="css\main_v2.css" />
+    <Content Include="css\main_v3.css" />
     <Content Include="css\meyer_reset.css" />
     <Content Include="img\Att_building_nashville.jpg" />
     <Content Include="img\bg_about.jpg" />
