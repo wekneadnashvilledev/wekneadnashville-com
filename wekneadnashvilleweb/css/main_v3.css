@@ -106,8 +106,10 @@ div.thirds a {
     font-family: PenultimateLight, Verdana, Helvetica, sans-serif;
     line-height: 125%;
 }
-div.thirds a:hover {
+div.thirds a:hover div {
     text-decoration: underline;
+}
+div.thirds a:hover {
     cursor: pointer;
 }
 #topDivSpacer {
@@ -144,4 +146,7 @@ table.therapists div.placeholder {
 #miles_therapists_thumbnail_caption {
     font-size: 14px;
     margin-top: 50%;
+}
+div.thirds a:hover #miles_therapists_thumbnail_caption {
+    text-decoration: none;
 }
