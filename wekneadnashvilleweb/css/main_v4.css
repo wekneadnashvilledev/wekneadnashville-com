@@ -146,3 +146,7 @@ table.therapists a {
 table.therapists a:hover .therapistName {
     text-decoration: underline;
 }
+iframe {
+    margin: 30px 0px 0px 0px;
+    display: inline-block;
+}
