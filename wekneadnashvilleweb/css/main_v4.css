@@ -150,3 +150,17 @@ iframe {
     margin: 30px 0px 0px 0px;
     display: inline-block;
 }
+#photographerCallout {
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+#photographerCallout a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 10px;
+    text-shadow: none;
+    color: rgb(255, 255, 255);
+}
+#photographerCallout a:hover {
+    text-decoration: underline;
+}
