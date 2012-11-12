@@ -1,9 +1,33 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="/css/meyer_reset.css" />
-        <link rel="stylesheet" type="text/css" href="/css/main_v4.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/meyer_reset.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/main_v5.css" />
+        <!--[if lt IE 9]>
+        <style type="text/css">
+            img.body_background {
+                display: block;
+            }
+            div.content {
+               background:transparent;
+               filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000); 
+               zoom: 1;
+            }
+        </style>
+        <![endif]-->
+
         @RenderSection("CustomStyles")
+
+        <!--[if lt IE 9]>
+        <style type="text/css">
+            body {
+                background: none;
+            }
+        </style>
+
+        <script type="text/javascript" src="/scripts/html5shiv.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
     </head>
     <body>
         <div id="topDivSpacer">&nbsp;</div>
@@ -21,6 +45,13 @@
 
             @RenderBody()
         </div>
+
+        <script type="text/javascript">
+            $('img.body_background').css("width", $('body').css("width")).css("height", $('body').css("height"));
+            $(window).resize(function () {
+                $('img.body_background').css("width", $('body').css("width")).css("height", $('body').css("height"));
+            });
+        </script>
 
     </body>
 </html>

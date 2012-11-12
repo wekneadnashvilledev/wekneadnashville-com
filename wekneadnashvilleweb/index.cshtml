@@ -3,12 +3,22 @@
 @section CustomStyles {
     <style type="text/css">
         body {
-            background-image: url("../img/bg_blue_hands_light.jpg");
+            background-image: url("/img/bg_blue_hands_light.jpg");
         }
         div.close {
             display: none;
         }
     </style>
+    <!--[if lt IE 9]>
+    <style type="text/css">
+        a.homepage_tile {
+            background: none;
+        }
+        div.viewport {
+            display: block;
+        }
+    </style>
+    <![endif]-->
 }
 
 <h1>
@@ -19,25 +29,40 @@
 </h2>
 
 <div class="thirds">
-    <a href="~/about.cshtml" style="height: 40%; background: url('@Href("~/img/fountain.jpg")') no-repeat rgb(72, 0, 255) center top; background-size: 100% auto;">
+    <a href="~/about.cshtml" class="homepage_tile homepage_about">
+        <div class="viewport">
+            <img src="/img/fountain.jpg" />
+        </div>
         <div class="anchorWrap">About</div>
     </a>
-    <a href="~/therapists.cshtml" style="height: 60%; background: url('@Href("~/img/miles_sitting.jpg")') no-repeat rgb(72, 0, 255) center 10%; background-size: 100% auto;">
+    <a href="~/therapists.cshtml" class="homepage_tile homepage_therapists">
+        <div class="viewport">
+            <img src="/img/miles_sitting.jpg" />
+        </div>
         <div class="anchorWrap">Therapists</div>
     </a>
 </div>
 
 <div class="thirds">
-    <a href="~/services.cshtml" style="height: 100%; background: url('@Href("~/img/Att_building_nashville.jpg")') no-repeat rgb(72, 0, 255) center center; background-size: 100% auto;">
+    <a href="~/services.cshtml" class="homepage_tile homepage_services">
+        <div class="viewport">
+            <img src="/img/Att_building_nashville.jpg" />
+        </div>
         <div class="anchorWrap">Services</div>
     </a>
 </div>
 
 <div class="thirds">
-    <a href="~/info.cshtml" style="height: 60%; background: url('@Href("~/img/nashville_street.jpg")') no-repeat rgb(72, 0, 255) center center; background-size: auto 100%;">
+    <a href="~/info.cshtml" class="homepage_tile homepage_info">
+        <div class="viewport">
+            <img src="/img/nashville_street.jpg" />
+        </div>
         <div class="anchorWrap">Info</div>
     </a>
-    <a href="~/videodemo.cshtml" style="height: 40%; background: url('@Href("~/img/massage_stock_man.jpg")') no-repeat rgb(72, 0, 255) center center; background-size: 100% auto;">
+    <a href="~/videodemo.cshtml" class="homepage_tile homepage_videodemo">
+        <div class="viewport">
+            <img src="/img/massage_stock_man.jpg" />
+        </div>
         <div class="anchorWrap">Video Demo</div>
     </a>
 </div>
@@ -47,3 +72,20 @@
 <h2 class="footer">
     Wherever you are we've got what you knead!
 </h2>
+
+<img class="body_background" src="/img/bg_blue_hands_light.jpg" />
+
+<div class="imagepreload">
+    <img src="/img/bg_about.jpg" />
+    <img src="/img/bg_info_light.jpg" />
+    <img src="/img/bg_therapists.jpg" />
+</div>
+
+<script type="text/javascript">
+    $('a.homepage_tile').each(function (index) {
+        $(this).find('div.viewport').css("width", $(this).css("width")).css("height", $(this).css("height"));
+    });
+    $('a.homepage_therapists img').css('top', '-20px');
+    $('a.homepage_services img').css('top', '-20px');
+    $('a.homepage_videodemo img').css('top', '-30px');
+</script>

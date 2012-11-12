@@ -83,6 +83,8 @@
     <Content Include="img\miles_standing.jpg" />
     <Content Include="img\nashville_street.jpg" />
     <Content Include="img\therapist_placeholder.png" />
+    <Content Include="scripts\html5shiv.min.js" />
+    <Content Include="scripts\IE9.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

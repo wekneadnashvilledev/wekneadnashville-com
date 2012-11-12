@@ -1,0 +1,240 @@
+﻿@font-face {
+    font-family: PenultimateLight;
+    src: url('../img/penultimatelightregular.ttf');
+}
+@font-face {
+    font-family: PenultimateLight;
+    font-style: italic;
+    src: url('../img/penultimatelightitalregular.ttf');
+}
+html, body {
+    height: 100%;
+}
+h1, h2, p, span.left, span.right {
+    font-family: PenultimateLight, Verdana, Helvetica, sans-serif;
+    line-height: 125%;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.25em 0em;
+}
+h2 {
+    font-size: 1.5em;
+    margin: 0.4em 0em;
+    font-style: italic;
+}
+p {
+    font-size: 1.5em;
+    margin: 0.83em 0em;
+}
+p.therapist {
+    font-size: 1.25em;
+}
+.clearfix {
+    display: block;
+}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+}
+body {
+    background-color: rgb(72, 0, 255);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: Verdana, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: -2px 2px 2px rgb(0, 0, 0);
+}
+img.body_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    display: none;
+}
+div.content {
+    width: 70%;
+    min-height: 500px;
+    position: relative;
+    top: 50%;
+    margin: 0px auto;
+    margin-top: -250px;
+    padding: 0px 25px;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    border: 4px ridge rgb(100, 100, 100);
+}
+div.close {
+    text-align: right;
+    margin: 10px 0px;
+    text-shadow: none;
+}
+div.close span.closeX {
+    font-size: 24px;
+    vertical-align: -2px;
+}
+div.close a {
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+div.close a:hover {
+    cursor: pointer;
+    color: rgb(220, 220, 220);
+}
+div.serviceGrid {
+    text-align: left;
+}
+span.left {
+    padding-left: 15%;
+}
+span.right {
+    float: right;
+    padding-right: 20%;
+}
+div.thirds {
+    float: left;
+    width: 33.33%;
+    height: 340px;
+}
+div.thirds a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    font-family: PenultimateLight, Verdana, Helvetica, sans-serif;
+    line-height: 125%;
+}
+div.thirds a:hover div {
+    text-decoration: underline;
+}
+div.thirds a:hover {
+    cursor: pointer;
+}
+#topDivSpacer {
+    height: 0px;
+    line-height: 0px;
+    visibility: hidden;
+    content: ".";
+    clear: both;
+}
+.anchorWrap {
+    margin: 5px 0px 0px 0px;
+}
+.serviceGrid {
+    font-size: 1.4em;
+    margin: 30px 0px 0px 0px;
+}
+table.therapists {
+    margin: 0 auto;
+}
+table.therapists td {
+    padding: 10px;
+}
+table.therapists img {
+    border: 6px solid rgba(0, 0, 0, .4);
+    border-radius: 6px;
+}
+.therapistName {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 1px 2px rgb(0, 0, 0);
+}
+table.therapists a {
+    text-decoration: none;
+}
+table.therapists a:hover .therapistName {
+    text-decoration: underline;
+}
+iframe {
+    margin: 30px 0px 0px 0px;
+    display: inline-block;
+}
+#photographerCallout {
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+#photographerCallout a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: none;
+    color: rgb(255, 255, 255);
+}
+#photographerCallout a:hover {
+    text-decoration: underline;
+}
+a.homepage_tile {
+    background-color: rgb(72, 0, 255);
+    background-repeat: no-repeat;
+}
+div.viewport {
+    display: none;
+    position: absolute;
+    z-index: -10;
+    overflow: hidden;
+}
+a.homepage_tile img {
+    position: relative;
+    z-index: -10;
+}
+a.homepage_about {
+    height: 40%;
+    background-image: url('/img/fountain.jpg');
+    background-position: center top;
+    background-size: 100% auto;
+}
+a.homepage_about img {
+    width: 100%;
+    height: auto;
+}
+a.homepage_therapists {
+    height: 60%;
+    background-image: url('/img/miles_sitting.jpg');
+    background-position: center 10%;
+    background-size: 100% auto;
+}
+a.homepage_therapists img {
+    width: 100%;
+    height: auto;
+}
+a.homepage_services {
+    height: 100%;
+    background-image: url('/img/Att_building_nashville.jpg');
+    background-position: center center;
+    background-size: 100% auto;
+}
+a.homepage_services img {
+    width: 100%;
+    height: auto;
+}
+a.homepage_info {
+    height: 60%;
+    background-image: url('/img/nashville_street.jpg');
+    background-position: center center;
+    background-size: auto 100%;
+}
+a.homepage_info img {
+    width: auto;
+    height: 100%;
+}
+a.homepage_videodemo {
+    height: 40%;
+    background-image: url('/img/massage_stock_man.jpg');
+    background-position: center center;
+    background-size: 100% auto;
+}
+a.homepage_videodemo img {
+    width: 100%;
+    height: auto;
+}
+div.imagepreload {
+    display: none;
+}
