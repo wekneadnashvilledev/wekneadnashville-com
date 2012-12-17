@@ -86,6 +86,7 @@
     <Content Include="img\therapist_placeholder.png" />
     <Content Include="scripts\html5shiv.min.js" />
     <Content Include="scripts\IE9.js" />
+    <Content Include="scripts\sitemain.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
