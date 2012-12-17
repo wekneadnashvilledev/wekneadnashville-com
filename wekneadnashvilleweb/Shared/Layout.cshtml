@@ -18,6 +18,12 @@
 
         @RenderSection("CustomStyles")
 
+        <script type="text/javascript">
+            if (top.location != location) {
+                top.location.href = document.location.href;
+            }
+        </script>
+
         <!--[if lt IE 9]>
         <style type="text/css">
             body {
