@@ -19,16 +19,9 @@
         @RenderSection("CustomStyles")
 
         <script type="text/javascript">
-            if (top.location != location) {
-                top.location.href = document.location.href;
-            }
-
-            try {
-                var currentState = {};
-                window.history.replaceState(currentState, "Title", "http://www.wekneadnashville.com" + document.location.pathname);
-            } catch (error) {
-                alert(error.message);
-            }
+            //if (top.location != location) {
+            //    top.location.href = document.location.href;
+            //}
         </script>
 
         <!--[if lt IE 9]>
@@ -44,7 +37,7 @@
 
         <script type="text/javascript">
             var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-37086321-1']);
+            _gaq.push(['_setAccount', 'UA-37086321-2']);
             _gaq.push(['_trackPageview']);
 
             (function () {
