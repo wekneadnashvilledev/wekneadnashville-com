@@ -18,7 +18,18 @@
 
         @RenderSection("CustomStyles")
 
-        <script type="text/javascript" src="http://www.wekneadnashville.com/scripts/sitemain.js"></script>
+        <script type="text/javascript">
+            if (top.location != location) {
+                top.location.href = document.location.href;
+            }
+
+            try {
+                var currentState = {};
+                window.history.replaceState(currentState, "Title", "http://www.wekneadnashville.com" + document.location.pathname);
+            } catch (error) {
+                alert(error.message);
+            }
+        </script>
 
         <!--[if lt IE 9]>
         <style type="text/css">
